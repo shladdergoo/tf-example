@@ -4,9 +4,4 @@ resource "aws_instance" "jf-test" {
   ami               = "ami-099a8245f5daa82bf"
 
   tags = var.tags
-
-  user_data = <<-EOF
-              #!/bin/bash
-              sudo service apache2 start
-              EOF
 }
