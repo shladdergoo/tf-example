@@ -6,11 +6,10 @@ terraform {
 
 provider "aws" {
   region = "eu-west-1"
-
-  # Allow any 2.x version of the AWS provider
   version = "~> 2.0"
 }
 
+# Will include all modules and resources required for the feature/service
 module "airflow-cluster" {
     source = "./module/airflow-cluster"
     tags = var.tags
