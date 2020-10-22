@@ -5,5 +5,8 @@
 *.tfstate
 *.tfstate.*
 
+# python
+*.pyc
+
 # other
 .DS_Store
